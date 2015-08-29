@@ -32,9 +32,10 @@ fi
 
 
 cd $OPENSHIFT_REPO_DIR
+JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export M2=$OPENSHIFT_DATA_DIR/apache-maven-3.2.3/bin
 export MAVEN_OPTS="-Xms384m -Xmx412m"
-export JAVA_HOME=$OPENSHIFT_DATA_DIR/jdk/jdk1.8.0_20
+export JAVA_HOME=$OPENSHIFT_DATA_DIR/jdk1.8.0_20
 export PATH=$JAVA_HOME/bin:$M2:$PATH
 
 mvn -s settings.xml clean install
