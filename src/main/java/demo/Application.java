@@ -17,6 +17,6 @@ public class Application {
 
 	@RequestMapping("/hello")
 	public ResponseEntity<?> hello() {
-		return new ResponseEntity<>("Hallo Semuanya", HttpStatus.OK);
+		return new ResponseEntity<>("Test Aplikasi", HttpStatus.OK);
 	}
 }
