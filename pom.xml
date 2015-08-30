@@ -33,6 +33,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<start-class>demo.Application</start-class>
 		<java.version>1.8</java.version>
+		<maven.compiler.executable>$OPENSHIFT_DATA_DIR/jdk1.8.0_20/bin/javac</maven.compiler.executable>
+		<maven.compiler.fork>true</maven.compiler.fork>
 	</properties>
 	<build>
 		<plugins>
