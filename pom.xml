@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>belajar</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Spring Boot with java 8 uploaded to Openshift</description>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
