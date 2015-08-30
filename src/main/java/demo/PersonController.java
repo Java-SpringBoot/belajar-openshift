@@ -16,10 +16,13 @@ public class PersonController {
 	@Autowired
 	private PersonService personService;
 
+	/**
+	 * for the sake of simplicity, i use GET method to insert the person.
+	 * In real world situation you will use POST method
+	 */
 	@RequestMapping(value = "/add/{name}", method = RequestMethod.GET)
 	public ResponseEntity<?> insert(@PathVariable String name) {
-		
-		return new ResponseEntity<>(personService.insert(name),HttpStatus.CREATED);
+		return new ResponseEntity<>(personService.insert(name), HttpStatus.CREATED);
 	}
 
 	@RequestMapping(method = RequestMethod.GET)
